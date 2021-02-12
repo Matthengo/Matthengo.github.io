@@ -1,0 +1,65 @@
+/* Criação de variáveis para facilitar o uso das cores */
+:root {
+    --body_color: #472d30;
+    --text_color: #ffe1a8;
+    --header_texts_color: #e26d5c;
+    --header_menu_color: #221416;
+}
+
+/* Adiciona a fonte Hermit-Regular para poder ser usada */
+@font-face {
+    font-family: 'Hermit-Regular';
+    src: url('fonts/Hermit-Regular.otf') format('opentype');
+
+}
+
+body {
+    font-family: 'Hermit-Regular';
+    color: var(--text_color);
+    background-color: var(--body_color);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header_text {
+    color: var(--header_texts_color);
+}
+
+#photo {
+    width: 150px;
+    border-radius: 50% 0% 50% 0%;
+}
+
+#header {
+    text-align: center;
+    /* background-image: url(./images/profile_background.png);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    margin: 0; */
+}
+
+#welcome_text {
+    text-align: center;
+}
+
+#header_menu {
+    width: 100%;
+    height: 50px;
+    background-color: var(--header_menu_color);
+    border-radius: 0px 0px 15px 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#youtube_button {
+    vertical-align: -10px;
+}
+
+.center_tag {
+    text-align: center;
+}
