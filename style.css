@@ -31,21 +31,42 @@ a {
 
 #photo {
     width: 150px;
+    height: 100%;
     border-radius: 50% 0% 50% 0%;
 }
 
+
+
 #header {
     text-align: center;
-    /* background-image: url(./images/profile_background.png);
+}
+
+#header_blur {
+    background-image: url(./images/header_image.jpg);
     background-size: cover;
+    background-position: center;
+    position: absolute;
     width: 100%;
-    height: 300px;
-    margin: 0; */
+    height: 400px;
+    top: 0px;
+    z-index: -1;
+    filter: blur(4px);
+    margin: -2px;
+}
+
+#photo_local {
+    height: 160px;
+}
+
+
+#body {
+    margin: 0 150px;
 }
 
 #welcome_text {
     text-align: center;
 }
+
 
 #header_menu {
     width: 100%;
@@ -54,6 +75,11 @@ a {
     border-radius: 0px 0px 15px 15px;
     font-size: 18px;
     text-align: center;
+}
+
+/* Seleciona todas (n) as tags 'a' da #header_menu */
+#header_menu a:nth-child(n) {
+    vertical-align: -50%;
 }
 
 #youtube_button {
