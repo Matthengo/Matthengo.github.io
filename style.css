@@ -1,9 +1,9 @@
 /* Criação de variáveis para facilitar o uso das cores */
 :root {
-    --body_color: #472d30;
-    --text_color: #ffe1a8;
-    --header_texts_color: #e26d5c;
-    --header_menu_color: #221416;
+    --body_color: #212d40;
+    --text_color: #fbddd7;
+    --header_texts_color: #d66853;
+    --header_menu_color: #11151c;
 }
 
 /* Adiciona a fonte Hermit-Regular para poder ser usada */
@@ -17,6 +17,7 @@ body {
     font-family: 'Hermit-Regular';
     color: var(--text_color);
     background-color: var(--body_color);
+    background: linear-gradient(0deg, rgba(44, 70, 84, 1) 0%, rgba(37, 54, 71, 1) 40%, rgba(33, 45, 64, 1) 100%);
     margin: 0;
 }
 
@@ -25,10 +26,100 @@ a {
     color: white;
 }
 
+#header {
+    margin-bottom: 50px;
+}
+
 .header_text {
     color: var(--header_texts_color);
 }
 
+.welcome_header {
+    position: absolute;
+    margin: 10px 0px 10px 15px;
+}
+
+#header_menu {
+    width: 100%;
+    background-color: var(--header_menu_color);
+    border-radius: 0px 0px 15px 15px;
+    text-align: center;
+}
+
+#header_menu ul,
+#header_menu ul li {
+    display: inline-block;
+}
+
+#header_menu ul {
+    padding: 0;
+    margin: 10px 0px;
+}
+
+.blurred_image {
+    background-image: url(./images/header-wallpaper.jpg);
+    background-size: cover;
+    background-position: center 700px;
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 0px;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+#profile_socket {
+    text-align: center;
+}
+
+/* Foi colocado vertical-align em ambos os conteúdos para que a foto fique centralizada */
+.photo {
+    width: 150px;
+    height: 160px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+    border-radius: 50% 0% 50% 0%;
+}
+
+#about_content {
+    text-align: right;
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+    height: 100%;
+    padding-left: 20px;
+}
+
+#about_content strong {
+    color: var(--header_texts_color);
+}
+
+.background_opacity {
+    width: 55%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    border-radius: 0px 100px;
+}
+
+#body {
+    margin: 0 15%;
+}
+
+.center_tag {
+    text-align: center;
+}
+
+#youtube_button {
+    vertical-align: -10px;
+}
+
+#skills ul li:nth-of-type(odd) {
+    color: #ffb1a1;
+}
+
+
+/*
 #photo {
     width: 150px;
     height: 100%;
@@ -47,7 +138,7 @@ a {
     background-position: center;
     position: absolute;
     width: 100%;
-    height: 400px;
+    height: 350px;
     top: 0px;
     z-index: -1;
     filter: blur(4px);
@@ -64,7 +155,9 @@ a {
 }
 
 #welcome_text {
-    text-align: center;
+    text-align: left;
+    position: absolute;
+    margin-left: 30px;
 }
 
 
@@ -77,7 +170,11 @@ a {
     text-align: center;
 }
 
-/* Seleciona todas (n) as tags 'a' da #header_menu */
+#header_menu ul li {
+    display: inline-block;
+}
+
+
 #header_menu a:nth-child(n) {
     vertical-align: -50%;
 }
@@ -89,3 +186,7 @@ a {
 .center_tag {
     text-align: center;
 }
+
+.profile_content {
+    float: right;
+} */

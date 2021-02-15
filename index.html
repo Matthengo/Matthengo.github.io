@@ -10,75 +10,108 @@
 <body>
 
     <div id="header">
-        <div id="header_menu"><a href="#profile">Perfil</a> <a href="#character">Caracteristicas</a> <a
-                href="#skills">Habilidades</a>
+        <span class="header_text welcome_header">Hallo! Wie geht's?</span>
+        <div id="header_menu">
+            <ul>
+                <li><a href="#profile">Sobre</a></li>
+                <li><a href="#character">Caracteristicas</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+            </ul>
         </div>
-        <h1 class="header_text" id="welcome_text">Hallo! Wie geht's?</h1>
-        <h2 class="header_text">Meu nome é Matheus Henrique de Gois</h2>
-        <div id="photo_local"><img id="photo" src="./images/eu.jpg"
-                alt="Uma foto minha tirada na formatura da faculdade.">
+        <div class="blurred_image"></div>
+        <div id="profile_socket">
+            <div class="background_opacity">
+                <h2 class="header_text">Meu nome é Matheus Henrique de Gois</h2>
+                <div id="photo_content_socket">
+                    <img class="photo" src="images/eu.jpg" alt="Eu na formatura da faculdade">
+                    <div id="about_content">
+                        <h3 id="profile" class="header_text">Sobre</h3>
+                        <p>
+                            Sou brasileiro, moro na cidade de Araçatuba/SP e sou formado em engenharia mecatrônica pela
+                            Universidade Salesiano. <br>
+                            Atualmente estou cursando <strong>Desenvolvimento WEB </strong> pela <strong>Trybe</strong>.
+                            <br><br>
+                            Amo jogos, sair com amigos e descobrir novas tecnologias que me <em>"triggam"</em>. Sempre
+                            procuro
+                            evoluir e aprender.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p><em>"Aquilo que não me desafia, me entedia."</em></p>
     </div>
-    <div id="header_blur"></div>
+
     <div id="body">
-        <h3 id="profile" class="header_text">Perfil</h3>
-        <p>
-            Sou brasileiro. Moro na cidade de Araçatuba/SP. Sou formado em engenharia mecatrônica pela Universidade
-            Salesiano e atualmente estou <strong>cursando WebDev pela Trybe</strong>. <br> Amo jogos, sair com amigos e
-            descobrir novas tecnologias que me <em>"triggam"</em>. E sempre procuro evoluir e aprender.
-        </p>
-        <h3 id="character" class="header_text">Caracteristicas</h3>
-        <p>Caracteristicas mais notáveis</p>
-        <ul>
-            <li><strong>Persistente:</strong> Provavelmente uma das minha maiores qualidades, mas também um dos maiores
-                defeitos, pois pode acabar atrapalhando o dia-a-dia para resolver determinados
-                empecilhos.</li>
-            <li><strong>Autodidata e <em>fast learner</em>:</strong> Tenho muita facilidade em aprender as coisas,
-                principalmente quando o assunto me interessa, acabando, até, aprendendo mais do que o "necessário".</li>
-            <li><strong>Talvez Perfeccionista:</strong> Deixo uma frase para essa caracteristica: <em>"Se não for pra
-                    ficar
-                    bom, eu nem começo."</em></li>
-            <li><strong>Educado, simpático e assistente: </strong>Gosto de ajudar e ser prestativo, sempre sendo educado
-                e
-                com um sorriso no rosto.</li>
-        </ul>
-        <h3 class="header_text" id="skills">Habilidades: </h3>
-        <p>Habilidades que eu adiquiri ao longo da minha jornada.</p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li><strong>Javascript</strong></li>
-            <li><strong>Python</strong></li>
-            <li><strong>React Native</strong></li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-            <li>C++</li>
-            <li>C</li>
-            <li>Excel</li>
-        </ul>
-        <p>
-            Programação foi algo que me abriu os olhos para algo que eu realmente gosto de fazer e algo que eu me sinto
-            confortável e bom no que eu faço. <br>
-            Me orgulho das habilidades destacadas, principalmente de <strong>Python</strong>, pois foi uma linguagem que
-            eu
-            fiz um
-            <em>"intensive learning"</em>
-            para poder dar aula. <strong>Javascript</strong> e <strong>React Native</strong> eu me orgulho, pois foram,
-            respectivamente, a linguagem e o
-            framework onde eu comecei meus primeiros infinalizaveis projetos.
-        </p>
-        <div class="center_tag">
-            Uma das <a id="youtube_button" target="_blank" href="https://www.youtube.com/watch?v=fLpCyU_SHRo"><img
-                    src="https://img.shields.io/badge/Melhores Músicas-FF0000?style=for-the-badge&logo=youtube&logoColor=white"
-                    alt="youtube"></a> que eu ja
-            escutei na minha
-            vida.
+        <hr>
+        <div id="character">
+            <h3 id="character_header" class="header_text">Caracteristicas</h3>
+            <p>Caracteristicas mais notáveis</p>
+            <ul>
+                <li>
+                    <strong>Persistente:</strong> Provavelmente uma das minha maiores qualidades, mas também um dos
+                    maiores defeitos, pois pode acabar atrapalhando o dia-a-dia para resolver determinados
+                    empecilhos.
+                </li>
+                <li>
+                    <strong>Autodidata e <em>fast learner</em>:</strong> Tenho muita facilidade em aprender as coisas,
+                    principalmente quando o assunto me interessa, acabando, até, aprendendo mais do que o "necessário".
+                </li>
+                <li>
+                    <strong>Talvez Perfeccionista:</strong> Deixo uma frase para essa caracteristica: <em>"Se não for
+                        pra ficar bom, eu nem começo."</em>
+                </li>
+                <li>
+                    <strong>Educado, simpático e assistente: </strong>Gosto de ajudar e ser prestativo, sempre sendo
+                    educado e com um sorriso no rosto.
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div id="skills">
+            <h3 class="header_text" id="skills_header">Habilidades: </h3>
+            <p>Habilidades que eu adiquiri ao longo da minha jornada.</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li><strong>Javascript</strong></li>
+                <li><strong>Python</strong></li>
+                <li><strong>React Native</strong></li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>Excel</li>
+            </ul>
+            <p>
+                Programação foi algo que me abriu os olhos para algo que eu realmente gosto de fazer e algo que eu me
+                sinto
+                confortável e bom no que eu faço. <br><br>
+                Me orgulho das habilidades destacadas, principalmente de <strong>Python</strong>, pois foi uma linguagem
+                que
+                eu
+                fiz um
+                <em>"intensive learning"</em>
+                para poder dar aula. <strong>Javascript</strong> e <strong>React Native</strong> eu me orgulho, pois
+                foram,
+                respectivamente, a linguagem e o
+                framework onde eu comecei meus primeiros infinalizaveis projetos.
+            </p>
         </div>
     </div>
-
-
+    <hr>
+    <div id="footer">
+        <div class="center_tag">
+            <p>
+                Uma das
+                <a id="youtube_button" target="_blank" href="https://www.youtube.com/watch?v=fLpCyU_SHRo">
+                    <img src="https://img.shields.io/badge/Melhores Músicas-FF0000?style=for-the-badge&logo=youtube&logoColor=white"
+                        alt="youtube">
+                </a>
+                que eu ja escutei na minha vida.
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>
