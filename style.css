@@ -57,6 +57,10 @@ a {
     margin: 10px 0px;
 }
 
+#header_menu ul li a:hover {
+    color: var(--header_texts_color)
+}
+
 #header_img_socket {
     height: auto;
 }
@@ -124,6 +128,9 @@ a {
     color: #ffb1a1;
 }
 
+#skills ul li strong {
+    text-decoration: underline;
+}
 
 /*
 #photo {
