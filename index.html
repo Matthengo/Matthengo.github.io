@@ -1,1 +1,74 @@
-Hello World
+<!DOCTYPE html>
+<html lang="br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bulma/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Pokedex</title>
+</head>
+<body>
+  <header class="pokemon-font">
+    <section class="container has-text-centered">
+      <h1 class="title is-1 has-text-white p-4">Choose your Pokemon!</h1>
+      <section class="input-section container"><input class="input is-normal mb-3" type="text" placeholder="POKEMON" id="pokemon-input"></section>
+    </section>
+  </header>
+  <main class="container has-text-centered" id='main-content' hidden>
+    <section id="pokemon-info" class="has-text-white is-size-4">
+      
+      <section id="pokemon-img-container"></section>
+      <div id="info-group">
+        <div class="is-flex is-justify-content-center">
+          <section id="pokemon-name" class="mx-1 is-size-2 pokemon-font"></section>
+          <section id="pokemon-id" class="mx-1"></section>
+        </div>
+        <section id="pokemon-types-container" class="is-flex is-flex-direction-column is-align-items-center">
+          <section id="pokemon-types" class="m-3">
+            <span>Type: </span>
+            <ul id="types" class="is-flex is-flex-direction-row"></ul>
+          </section>
+          <!-- <section id="pokemon-weakness" class="m-3">
+            <span>Weakness: </span>
+            <ul id="weakeness" class="is-flex is-flex-direction-row">
+              <li class="px-4 py-1">Fire</li>
+              <li class="px-4 py-1">Psychic</li>
+              <li class="px-4 py-1">Flying</li>
+              <li class="px-4 py-1">Ice</li>
+            </ul>
+          </section> -->
+        </section>
+        <section class="is-flex is-justify-content-center">
+          <section id="pokemon-stats" class="is-flex is-justify-content-center is-flex-grow-1">
+             <ul class="m-3">
+               <li><span>HP: </span></li>
+               <li><span>Attack: </span></li>
+               <li><span>Defense: </span></li>
+               <li><span>Special-A: </span></li>
+               <li><span>Special-D: </span></li>
+               <li><span>Speed: </span></li>
+             </ul>
+             <ul class="m-3" id="pokemon-stats-progress-bar"></ul>
+           </section>
+           <section id="pokemon-base-info" class="is-flex is-flex-direction-column is-justify-content-space-around is-flex-grow-1">
+             <section id="pokemon-height-weight">
+               <ul>
+                 <li><span>Altura: </span><span id="height-value"></span></li>
+                 <li><span>Peso: </span><span id="weight-value"></span></li>
+               </ul>
+             </section>
+             <section id="pokemon-abilities-container">
+               <span>Abilities: </span>
+               <ul class="is-flex is-align-items-center is-flex-direction-column" id="pokemon-abilities"></ul>
+             </section>
+           </section>
+        </section>
+         <section id="pokemon-evolution-chain"></section>
+      </div>
+    </section>
+  </main>
+  <footer class=""></footer>
+  <script src="script.js"></script>
+</body>
+</html>
