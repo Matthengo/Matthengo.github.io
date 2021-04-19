@@ -26,6 +26,7 @@ const createPokemonImg = (imgUrl, altPokemonName) => {
   const imgContainer = document.getElementById('pokemon-img-container');
   newImg.src = imgUrl;
   newImg.alt = altPokemonName;
+  newImg.id = 'pokemon-img';
   imgContainer.appendChild(newImg);
 }
 
@@ -91,12 +92,33 @@ const renderPokemon = async (event) => {
   
 }
 
+const resetPokemonContent = () => {
+  const pokemonElementName = document.getElementById('pokemon-name');
+  const pokemonId = document.getElementById('pokemon-id');
+  const heightValue = document.getElementById('height-value');
+  const weightValue = document.getElementById('weight-value');
+  const abilitiesList = document.getElementById('pokemon-abilities');
+  const statsProgressBar = document.getElementById('pokemon-stats-progress-bar');
+  const typesElement = document.getElementById('types');
+  const pokemonImg = document.getElementById('pokemon-img');
+
+  pokemonElementName.innerText = '';
+  pokemonId.innerText = '';
+  heightValue.innerText = '';
+  weightValue.innerText = '';
+  abilitiesList.innerHTML = '';
+  statsProgressBar.innerHTML = '';
+  typesElement.innerHTML = '';
+  if(pokemonImg) pokemonImg.remove();
+}
+
 const getPokemonByName = () => {
   const pokemonInput = document.getElementById('pokemon-input');
   const mainContent = document.getElementById('main-content');
   pokemonInput.addEventListener('keypress', async (event) => {
     if(event.key === 'Enter'){
       try {
+        resetPokemonContent();
         await renderPokemon(event);
         mainContent.removeAttribute('hidden')
         event.target.value = '';
